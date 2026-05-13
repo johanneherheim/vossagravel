@@ -46,23 +46,23 @@ body {
   }
 
   h1 {
-    @apply text-3xl sm:text-4xl font-semibold tracking-tight;
+    @apply text-4xl sm:text-5xl font-semibold tracking-tight;
   }
 
   h2 {
-    @apply text-2xl mb-5 sm:text-3xl font-semibold tracking-tight;
+    @apply text-3xl mb-5 sm:text-4xl font-semibold tracking-tight;
   }
 
   h3 {
-    @apply text-xl mb-3 sm:text-2xl font-semibold tracking-tight;
+    @apply text-2xl mb-3 sm:text-3xl font-semibold tracking-tight;
   }
 
   h4 {
-    @apply text-lg sm:text-xl font-semibold tracking-tight;
+    @apply text-xl sm:text-2xl font-semibold tracking-tight;
   }
 
   h5 {
-    @apply text-base sm:text-lg font-semibold tracking-tight;
+    @apply text-lg sm:text-base font-semibold tracking-tight;
   }
 
   p {
