@@ -1,5 +1,6 @@
 import Image from "next/image";
-import picture from "@/components/images/framside.png";
+import picture from "@/components/images/1.jpeg";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,14 +13,21 @@ export default function Home() {
         priority
       />
 
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/70" />
 
-      <div className="absolute top-14 z-10 w-full sm:w-fit rounded text-white">
-        <h1 className="text-center mb-4 font-bold">Vossagravel</h1>
-        <h4 className="text-center mb-8">Norway Gravel Series 2026</h4>
-        <h1 className="font-extrabold tracking-wide text-2xl sm:text-5xl text-center px-8">
-          07.06.26
-        </h1>
+      <div className="absolute top-56 rounded text-center items-center text-white">
+        <h1 className="italic font-bold tracking-wide mb-4">VOSSAGRAVEL</h1>
+        <h3 className="italic font-semibold tracking-wide">07.06.26</h3>
+        <h4 className="italic font-semibold">Norway Gravel Series 2026</h4>
+        <div className="my-10">
+          <Link
+            href="https://live.eqtiming.com/82974#dashboard"
+            target="_blank"
+            className="bg-green-800 border-green-700 border-2 hover:bg-green-700 py-2 px-4 rounded-lg italic hover:animate-none animate-pulse tracking-wide font-semibold text-lg"
+          >
+            Påmelding
+          </Link>
+        </div>
       </div>
     </div>
   );

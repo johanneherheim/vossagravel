@@ -8,8 +8,8 @@ export const routes = [
     slug: "program",
   },
   {
-    name: "Løyper",
-    slug: "loyper",
+    name: "Løypa",
+    slug: "loypa",
   },
   {
     name: "Resultat",
