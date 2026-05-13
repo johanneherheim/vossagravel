@@ -52,9 +52,9 @@ export default function NavBar({ routes }: NavigationProps) {
         <div className="flex justify-between w-full">
           <Link href="/" className="my-auto mx-3">
             <h1 className="hidden lg:block text-2xl font-medium tracking-wider">
-              VOSS 3-ETAPPARS (V3E)
+              VOSSAGRAVEL
             </h1>
-            <h1 className="block lg:hidden text-2xl">V3E</h1>
+            <h1 className="block lg:hidden text-2xl">VOSSAGRAVEL</h1>
           </Link>
           <div className="p-2 my-auto hidden gap-4 sm:flex">
             <DesktopNavigation routes={routes} />
