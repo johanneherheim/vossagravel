@@ -13,7 +13,7 @@ export default function Home() {
         priority
       />
 
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-black/60" />
 
       <div className="absolute top-56 rounded text-center items-center text-white">
         <h1 className="italic font-bold tracking-wide mb-4">VOSSAGRAVEL</h1>

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { HamburgerMenuIcon, HomeIcon } from "@radix-ui/react-icons";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "./ui/sheet";
 

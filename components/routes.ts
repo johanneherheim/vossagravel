@@ -12,11 +12,15 @@ export const routes = [
     slug: "loypa",
   },
   {
-    name: "Resultat",
-    slug: "resultat",
+    name: "Overnatting",
+    slug: "overnatting",
   },
   {
     name: "Trafikkinfo",
     slug: "trafikkinfo",
+  },
+  {
+    name: "Resultat",
+    slug: "resultat",
   },
 ];
