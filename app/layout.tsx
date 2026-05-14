@@ -32,6 +32,8 @@ export default async function RootLayout({
   const footers = await getFooters();
   const footerData = await Promise.all(
     footers.map(async (footer) => ({
+      _id: footer._id,
+      slug: footer.slug,
       title: footer.title,
       content: (await getFooter(footer.slug)).content,
     })),
