@@ -24,7 +24,7 @@ function FooterSection({ footer }: { footer: FooterData }) {
 
 export default function Footer({ footers }: FooterProps) {
   return (
-    <div className="flex p-10 gap-10 flex-col sm:flex-row justify-between bg-muted">
+    <div className="flex p-10 gap-10 flex-col sm:flex-row justify-between bg-gray-100">
       {footers.map((footer, index) => (
         <FooterSection
           key={footer._id ?? footer.slug ?? `${footer.title}-${index}`}
