@@ -23,4 +23,8 @@ export const routes = [
     name: "Resultat",
     slug: "resultat",
   },
+  {
+    name: "Bilete",
+    slug: "bilete",
+  },
 ];
