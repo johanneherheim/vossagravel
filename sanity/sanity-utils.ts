@@ -53,13 +53,15 @@ export async function getPage(slug: string): Promise<Page> {
 
 export async function getFooters(): Promise<Footer[]> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "footer"]{
-        _id,
-        _createdAt,
-        title,
-        "slug": slug.current,
+    groq`*[_type == "footer"] | order(slug.current asc) {
+      _id,
+      _createdAt,
+      title,
+      "slug": slug.current,
+      content
     }`,
-    { options: { cache: "no-store" } },
+    {},
+    { cache: "no-store" },
   );
 }
 

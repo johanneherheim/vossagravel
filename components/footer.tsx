@@ -1,7 +1,9 @@
 import { Markdown } from "@/components/markdown";
 
 type FooterData = {
+  _id: string;
   title: string;
+  slug: string;
   content: string;
 };
 
@@ -24,7 +26,10 @@ export default function Footer({ footers }: FooterProps) {
   return (
     <div className="flex p-10 gap-10 flex-col sm:flex-row justify-between bg-muted">
       {footers.map((footer, index) => (
-        <FooterSection key={index} footer={footer} />
+        <FooterSection
+          key={footer._id ?? footer.slug ?? `${footer.title}-${index}`}
+          footer={footer}
+        />
       ))}
     </div>
   );
