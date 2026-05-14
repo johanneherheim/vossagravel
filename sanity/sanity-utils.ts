@@ -18,20 +18,33 @@ export async function getPages(): Promise<Page[]> {
 export async function getPage(slug: string): Promise<Page> {
   return createClient(clientConfig).fetch(
     groq`*[_type == "page" && slug.current == $slug][0]{
-        _id,
-        _createdAt,
-        title,
-        "slug": slug.current,
-        "images": images[]{
-          asset->{
-            _id,
-            url
-          },
-          alt
+      _id,
+      _createdAt,
+      title,
+      "slug": slug.current,
+
+      "images": images[]{
+        asset->{
+          _id,
+          url
         },
-        pdf,
-        gpx,
-        content,
+        alt
+      },
+
+      pdf{
+        asset->{
+          url
+        }
+      },
+
+      gpx[]{
+        asset->{
+          url
+        },
+        alt
+      },
+
+      content
     }`,
     { slug },
     { cache: "no-store" },
